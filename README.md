@@ -87,3 +87,15 @@ Continue the chat requests with the same `thread_id`, providing a name/email, a 
 - Issue observed: the first slot-label implementation used `strftime`'s Unix-only `%-d`/`%-I` directives. Running the slot generator on Windows raised `ValueError: Invalid format string`; replacing those directives with portable `%d`/`%I` formatting made the same check pass.
 - Issue observed: an actual FAQ request returned Groq `model_not_found` for `llama-3.3-70b-versatile`. The account's model list showed `qwen/qwen3.8-27b` as available; the implementation now uses that advertised model.
 - Issue observed: the first live RAG answer cited page 4 in its text but the source footer also listed an unrelated retrieved page 8. The footer now filters retrieved citations to pages named by the answer.
+
+# Tests and Validation
+
+## Asking a Question within handbook
+
+![questioning](./TestScreenshots/image.png)
+
+## Booking Slot
+
+![slot](./TestScreenshots/image-1.png)
+
+![slot](./TestScreenshots/image-2.png)
