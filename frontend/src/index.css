@@ -1,0 +1,26 @@
+:root {
+  --sans: "Aptos", "Segoe UI", sans-serif;
+  --mono: "Cascadia Code", Consolas, monospace;
+  font-family: var(--sans);
+  color: #35433b;
+  background: #f4f6f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+button,
+input {
+  font: inherit;
+}
+#root {
+  min-height: 100vh;
+}
